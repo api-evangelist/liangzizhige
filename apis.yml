@@ -1,19 +1,48 @@
 aid: liangzizhige
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/liangzizhige.png
 name: liangzizhige
-description: liangzizhige is a company surfaced as a portfolio company of qiming and added to the API
-  Evangelist network as a stub for enrichment. This profile is a lead awaiting the enrichment pipeline.
+description: >-
+  liangzizhige.com is the corporate domain of QuantaSing Group Limited (NASDAQ
+  QSG), a China-based online learning company listed by Qiming Venture Partners in its
+  technology portfolio as a provider of personal finance online courses. As of this
+  enrichment pass the liangzizhige.com domain is registered through Alibaba Cloud but
+  publishes no A record and serves no website; the only live company surface found is
+  the investor-relations site, which redirects to ir.quantasing.com. No developer portal,
+  API documentation, OpenAPI specification, public GitHub organization, or published
+  client libraries were found for this company.
 url: https://raw.githubusercontent.com/api-evangelist/liangzizhige/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
 x-backed-by:
 - qiming
 x-tier: stub
-x-tier-reason: portfolio-lead
+x-tier-reason: no-developer-surface
+x-identity-source: https://www.qimingvc.com/en/portfolio
+x-enrichment-note: Searched npm, PyPI and GitHub organizations (liangzizhige, quantasing)
+  and probed the corporate domain plus /.well-known/ paths on every live host; no API,
+  specification, SDK, or developer surface exists to enrich.
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-19'
 tags:
 - Company
+- Education
+- Online Learning
+- Consumer
+- Personal Finance
+- China
+- Venture Backed
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -23,3 +52,12 @@ maintainers:
 common:
 - type: Website
   url: https://liangzizhige.com
+- type: InvestorRelations
+  url: https://ir.quantasing.com/
+- type: DomainSecurity
+  url: security/liangzizhige-domain-security.yml
+x-enrichment:
+  date: '2026-07-19'
+  status: backfilled
+  pass: local-v1
+  note: backfilled from .gitignore signal + verified work evidence
