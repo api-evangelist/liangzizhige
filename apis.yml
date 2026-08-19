@@ -32,7 +32,7 @@ x-identity-source: https://www.qimingvc.com/en/portfolio
 x-enrichment-note: Searched npm, PyPI and GitHub organizations (liangzizhige, quantasing)
   and probed the corporate domain plus /.well-known/ paths on every live host; no API,
   specification, SDK, or developer surface exists to enrich.
-specificationVersion: '0.20'
+specificationVersion: '0.23'
 created: '2026-07-17'
 modified: '2026-07-19'
 tags:
